@@ -15,10 +15,9 @@ Feature: First Case A101 test otomasyon Practicum
     And kullanici beden olarak M Medium secer
     And kullanici urunu sepete ekler
     And kullanici sepeti goruntulu leye tiklar urunun eklendigini test eder
-
-
-
-
+    And kullanici urunun adetini ve bedenini kontrol eder
+    When kullanici sepeti onayla butonuna tiklar
+    And kullanici odeme ekranina gidildigini kontrol eder
     And kullanici sayfayi kapatir
 
 

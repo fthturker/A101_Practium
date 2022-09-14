@@ -30,19 +30,25 @@ public class A101Page {
     public WebElement aramaButonu;
     @FindBy(xpath = "//label[@for='attributes_integration_colourSİYAH']")
     public WebElement renk;
-    @FindBy(xpath = "//img[@alt='Calvin Klein CJ9T1329-BLK Kadın Body Siyah']")
+    @FindBy(xpath = "(//a[@title='Calvin Klein CJ9T1329-BLK Kadın Body Siyah'])[2]")
     public WebElement ilkUrun;
     @FindBy(xpath = "//a[normalize-space()='M']")
     public WebElement bedenSecim;
-
     @FindBy(xpath = "//button[@class='add-to-basket button green block with-icon js-add-basket']")
     public WebElement sepetEkleButonu;
-
     @FindBy(xpath = "//a[@class='go-to-shop']")
     public WebElement sepetGoruntuleButonu;
-
-    @FindBy(xpath = "//a[@class='title'][contains(text(),'Calvin Klein CJ9T1329-BLK Kadın Body Siyah')]")
+    @FindBy(xpath = "(//a[@title='Calvin Klein CJ9T1329-BLK Kadın Body Siyah'])[3]")
     public WebElement aramaSonucYazisi;
+
+    @FindBy(xpath = "//input[@value='1']")
+    public WebElement aramaSonucAdet;
+
+    @FindBy(xpath = "//span[normalize-space()='M']")
+    public WebElement aramaSonucBeden;
+
+    @FindBy(xpath = "(//a[@title='Sepeti Onayla'])[2]")
+    public WebElement sepetiOnaylaButonu;
 
 }
 

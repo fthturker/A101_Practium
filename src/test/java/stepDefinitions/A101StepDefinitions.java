@@ -80,12 +80,31 @@ public class A101StepDefinitions {
         a101Page.sepetGoruntuleButonu.click();
         Thread.sleep(2000);
 
-        String actualUrun=" Calvin Klein CJ9T1329-BLK Kadın Body Siyah";
+        String actualUrun="Calvin Klein CJ9T1329-BLK Kadın Body Siyah";
         String expectedUrun=a101Page.aramaSonucYazisi.getText();
         Assert.assertTrue(expectedUrun.contains(actualUrun));
     }
+    @And("kullanici urunun adetini ve bedenini kontrol eder")
+    public void kullaniciUrununAdetiniVeBedeniniKontrolEder() {
+        String actualAdet="";
+        String expectedAdet=a101Page.aramaSonucAdet.getText();
+        Assert.assertEquals(expectedAdet,actualAdet);
 
-
+        String actualBeden="M";
+        String expectedBeden=a101Page.aramaSonucBeden.getText();
+        Assert.assertTrue(expectedBeden.contains(actualBeden));
+    }
+    @When("kullanici sepeti onayla butonuna tiklar")
+    public void kullaniciSepetiOnaylaButonunaTiklar() throws InterruptedException {
+        a101Page.sepetiOnaylaButonu.click();
+        Thread.sleep(2000);
+    }
+    @And("kullanici odeme ekranina gidildigini kontrol eder")
+    public void kullaniciOdemeEkraninaGidildiginiKontrolEder() {
+        String actualUrl="https://www.a101.com.tr/orders/checkout/";
+        String expectedUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(expectedUrl,actualUrl,"odeme ekranina gidildi");
+    }
 
     @And("kullanici sayfayi kapatir")
     public void kullaniciSayfayiKapatir() {
