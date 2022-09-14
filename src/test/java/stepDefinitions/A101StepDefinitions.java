@@ -84,6 +84,7 @@ public class A101StepDefinitions {
         String expectedUrun=a101Page.aramaSonucYazisi.getText();
         Assert.assertTrue(expectedUrun.contains(actualUrun));
     }
+
     @And("kullanici urunun adetini ve bedenini kontrol eder")
     public void kullaniciUrununAdetiniVeBedeniniKontrolEder() {
         String actualAdet="";
