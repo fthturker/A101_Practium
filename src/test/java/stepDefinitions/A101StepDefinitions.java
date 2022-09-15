@@ -1,9 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.*;
-import org.apache.poi.ss.formula.functions.T;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
 import pages.A101Page;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -104,9 +102,8 @@ public class A101StepDefinitions {
     public void kullaniciOdemeEkraninaGidildiginiKontrolEder() {
         String actualUrl="https://www.a101.com.tr/orders/checkout/";
         String expectedUrl=Driver.getDriver().getCurrentUrl();
-        Assert.assertEquals(expectedUrl,actualUrl,"odeme ekranina gidildi");
+        Assert.assertEquals(expectedUrl,actualUrl);
     }
-
     @And("kullanici sayfayi kapatir")
     public void kullaniciSayfayiKapatir() {
         Driver.closeDriver();

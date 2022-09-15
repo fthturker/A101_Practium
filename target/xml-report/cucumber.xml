@@ -1,54 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.097">
-    <testcase classname="First Case A101 test otomasyon Practicum" name="Uctan uca test otomasyonu" time="22.964">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class='login-btn account-dropdown']&quot;}&#10;  (Session info: chrome=105.0.5195.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-2EU3NOB', ip: '192.168.1.24', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b928ecdcc34700a5f9adff447735d445, findElement {using=xpath, value=//a[@class='login-btn account-dropdown']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50215/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b928ecdcc34700a5f9adff447735d445" type="org.openqa.selenium.NoSuchElementException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="70.091">
+    <testcase classname="First Case A101 test otomasyon Practicum" name="Uctan uca test otomasyonu" time="69.959">
+        <system-out>
             <![CDATA[Given kullanici "a101Url" anasayfasinda.....................................passed
 Then kullanici cerezi kabul eder............................................passed
-Then kullanici A101 anasayfasinda dropdown a tiklar.........................failed
-And kullanici A101 anasayfasinda login e tiklar.............................skipped
-When kullanici telefon bilgilerini girer....................................skipped
-And kullanici giris butonuna basar..........................................skipped
-And kullanici dogrulama butonuna tiklar.....................................skipped
-When kullanici arama kutusuna kadin bluz yazar ve enter a tiklar............skipped
-And kullanici siyah renk secenegini tiklar..................................skipped
-And kullanici ilk urune tiklar..............................................skipped
-And kullanici beden olarak M Medium secer...................................skipped
-And kullanici urunu sepete ekler............................................skipped
-And kullanici sepeti goruntulu leye tiklar urunun eklendigini test eder.....skipped
-And kullanici urunun adetini ve bedenini kontrol eder.......................skipped
-And kullanici sayfayi kapatir...............................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='login-btn account-dropdown']"}
-  (Session info: chrome=105.0.5195.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'DESKTOP-2EU3NOB', ip: '192.168.1.24', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b928ecdcc34700a5f9adff447735d445, findElement {using=xpath, value=//a[@class='login-btn account-dropdown']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50215/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b928ecdcc34700a5f9adff447735d445
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at stepDefinitions.A101StepDefinitions.kullanici_a101_anasayfasinda_giris_yap_a_tiklar(A101StepDefinitions.java:24)
-	at ✽.kullanici A101 anasayfasinda dropdown a tiklar(file:///C:/Users/Lenovo/IdeaProjects/A101_Practicum/src/test/resources/features/FirstCase.feature:7)
+Then kullanici A101 anasayfasinda dropdown a tiklar.........................passed
+And kullanici A101 anasayfasinda login e tiklar.............................passed
+When kullanici telefon bilgilerini girer....................................passed
+And kullanici giris butonuna basar..........................................passed
+And kullanici dogrulama butonuna tiklar.....................................passed
+When kullanici arama kutusuna kadin bluz yazar ve enter a tiklar............passed
+And kullanici siyah renk secenegini tiklar..................................passed
+And kullanici ilk urune tiklar..............................................passed
+And kullanici beden olarak M Medium secer...................................passed
+And kullanici urunu sepete ekler............................................passed
+And kullanici sepeti goruntulu leye tiklar urunun eklendigini test eder.....passed
+And kullanici urunun adetini ve bedenini kontrol eder.......................passed
+When kullanici sepeti onayla butonuna tiklar................................passed
+And kullanici odeme ekranina gidildigini kontrol eder.......................passed
+And kullanici sayfayi kapatir...............................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
