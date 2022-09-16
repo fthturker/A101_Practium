@@ -71,5 +71,38 @@ public class A101Page {
 
     @FindBy(xpath = "//button[normalize-space()='DEVAM ET']")
     public WebElement devamEtButon;
+
+    @FindBy(xpath = "(//a[@title='Yeni adres oluştur'])[1]")
+    public WebElement yeniAdresOlusturButonu;
+
+    @FindBy(xpath = "//input[@placeholder='Ev adresim, iş adresim vb.']")
+    public WebElement adresBasligi;
+
+    @FindBy(xpath = "//select[@name='city']")
+    public WebElement ilDropDown;
+
+    @FindBy(xpath = "//select[@name='township']")
+    public WebElement ilceDropDown;
+
+    @FindBy(xpath = "//select[@name='district']")
+    public WebElement mahalleDropDown;
+
+    @FindBy(xpath = "//textarea[@name='line']")
+    public WebElement adres;
+
+    @FindBy(xpath = "//button[normalize-space()='KAYDET']")
+    public WebElement adresKaydetButonu;
+
+    @FindBy(xpath = "//button[normalize-space()='Kaydet ve Devam Et']")
+    public WebElement kaydetVeDevamEtButonu;
+
+    @FindBy(xpath = "//span[@class='order-complete']")
+    public WebElement siparisiTamamlaButonu;
+
+    @FindBy(xpath = "//span[contains(text(),'2. ÖDEME SEÇENEKLERİ')]")
+    public WebElement odemeSayfasi;
+
+    @FindBy(xpath = "(//span[@class='error'])[2]")
+    public WebElement kartBilgisiGirinText;
 }
 
