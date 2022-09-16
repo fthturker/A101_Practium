@@ -40,15 +40,36 @@ public class A101Page {
     public WebElement sepetGoruntuleButonu;
     @FindBy(xpath = "(//a[@title='Calvin Klein CJ9T1329-BLK Kadın Body Siyah'])[3]")
     public WebElement aramaSonucYazisi;
-
     @FindBy(xpath = "//input[@value='1']")
     public WebElement aramaSonucAdet;
-
     @FindBy(xpath = "//span[normalize-space()='M']")
     public WebElement aramaSonucBeden;
-
     @FindBy(xpath = "(//a[@title='Sepeti Onayla'])[2]")
     public WebElement sepetiOnaylaButonu;
 
+    // Second Case
+    @FindBy(xpath = "(//a[normalize-space()='Giyim & aksesuar'])[1]")
+    public WebElement giyimAksesuarButonu;
+
+    @FindBy(xpath = "//a[@class='js-filter-link '][contains(text(),'Kadın İç Giyim')]")
+    public WebElement kadinIcGiyimButonu;
+
+    @FindBy(xpath = "//a[@class='js-filter-link '][contains(text(),'Dizaltı Çorap')]")
+    public WebElement dizAltiCorapButonu;
+
+    @FindBy(xpath = "//img[@alt='Penti Kadın 50 Denye Pantolon Çorabı Siyah']")
+    public WebElement ilkUrunCorap;
+
+    @FindBy(xpath = "//span[contains(text(),'SİYAH')]")
+    public WebElement ilkUrunCorapRenk;
+
+    @FindBy(xpath = "//a[normalize-space()='ÜYE OLMADAN DEVAM ET']")
+    public WebElement uyeOlmadanDevamEtButon;
+
+    @FindBy(xpath = "//input[@name='user_email']")
+    public WebElement eMail;
+
+    @FindBy(xpath = "//button[normalize-space()='DEVAM ET']")
+    public WebElement devamEtButon;
 }
 

@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="70.091">
-    <testcase classname="First Case A101 test otomasyon Practicum" name="Uctan uca test otomasyonu" time="69.959">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.158">
+    <testcase classname="Second Case A101 test otomasyon Practicum" name="Uctan uca test otomasyonu" time="32.135">
         <system-out>
             <![CDATA[Given kullanici "a101Url" anasayfasinda.....................................passed
-Then kullanici cerezi kabul eder............................................passed
-Then kullanici A101 anasayfasinda dropdown a tiklar.........................passed
-And kullanici A101 anasayfasinda login e tiklar.............................passed
-When kullanici telefon bilgilerini girer....................................passed
-And kullanici giris butonuna basar..........................................passed
-And kullanici dogrulama butonuna tiklar.....................................passed
-When kullanici arama kutusuna kadin bluz yazar ve enter a tiklar............passed
-And kullanici siyah renk secenegini tiklar..................................passed
-And kullanici ilk urune tiklar..............................................passed
-And kullanici beden olarak M Medium secer...................................passed
-And kullanici urunu sepete ekler............................................passed
-And kullanici sepeti goruntulu leye tiklar urunun eklendigini test eder.....passed
-And kullanici urunun adetini ve bedenini kontrol eder.......................passed
-When kullanici sepeti onayla butonuna tiklar................................passed
-And kullanici odeme ekranina gidildigini kontrol eder.......................passed
+And kullanici cerezi kabul eder.............................................passed
+Then kullanici giyim aksesuar i tiklar......................................passed
+And kullanici kadin ic giyim i tiklar.......................................passed
+And kullanici dizalti corap tiklar..........................................passed
+And kullanici ilk urunu secer...............................................passed
+And kullanici acilan urunun siyah oldugunu dogrular.........................passed
+When kullanici urunu sepete ekler...........................................passed
+And kullanici sepeti goruntulu leye tiklar..................................passed
+And kullanici sepeti onayla butonuna tiklar.................................passed
 And kullanici sayfayi kapatir...............................................passed
 ]]>
         </system-out>

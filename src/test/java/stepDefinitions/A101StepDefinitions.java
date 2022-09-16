@@ -1,13 +1,16 @@
 package stepDefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import pages.A101Page;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class A101StepDefinitions {
     A101Page a101Page = new A101Page();
+    Faker faker=new Faker();
 
     @Given("kullanici {string} anasayfasinda")
     public void kullanici_anasayfasinda(String string) {
@@ -109,6 +112,53 @@ public class A101StepDefinitions {
         Driver.closeDriver();
     }
 
+    // Second Case Step Definitions
+
+    @Then("kullanici giyim aksesuar i tiklar")
+    public void kullanici_giyim_aksesuar_i_tiklar() throws InterruptedException {
+       a101Page.giyimAksesuarButonu.click();
+       Thread.sleep(3000);
+    }
+    @Then("kullanici kadin ic giyim i tiklar")
+    public void kullanici_kadin_ic_giyim_i_tiklar() throws InterruptedException {
+        a101Page.kadinIcGiyimButonu.click();
+        Thread.sleep(3000);
+    }
+    @Then("kullanici dizalti corap tiklar")
+    public void kullanici_dizalti_corap_tiklar() throws InterruptedException {
+        a101Page.dizAltiCorapButonu.click();
+        Thread.sleep(3000);
+    }
+    @And("kullanici ilk urunu secer")
+    public void kullaniciIlkUrunuSecer() throws InterruptedException {
+        a101Page.ilkUrunCorap.click();
+        Thread.sleep(3000);
+    }
+    @Then("kullanici acilan urunun siyah oldugunu dogrular")
+    public void kullanici_acilan_urunun_siyah_oldugunu_dogrular() {
+        String actualRenk="SİYAH";
+        String expectedRenk=a101Page.ilkUrunCorapRenk.getText();
+        Assert.assertTrue(expectedRenk.contains(actualRenk));
+    }
 
 
+    @And("kullanici sepeti goruntulu leye tiklar")
+    public void kullaniciSepetiGoruntuluLeyeTiklar() throws InterruptedException {
+        a101Page.sepetGoruntuleButonu.click();
+        Thread.sleep(3000);
+    }
+
+    @When("kullanici uye olmadan devam et tiklar")
+    public void kullaniciUyeOlmadanDevamEtTiklar() throws InterruptedException {
+        a101Page.uyeOlmadanDevamEtButon.click();
+        Thread.sleep(3000);
+    }
+
+    @And("kullanici e-mail girer ve devam et butonu tiklar")
+    public void kullaniciEMailGirerVeDevamEtButonuTiklar() throws InterruptedException {
+        a101Page.eMail.sendKeys(faker.internet().emailAddress()+ Keys.TAB);
+        Thread.sleep(3000);
+        a101Page.devamEtButon.click();
+        Thread.sleep(3000);
+    }
 }
