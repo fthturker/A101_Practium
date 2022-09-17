@@ -17,3 +17,5 @@ We implemented End-to-End Testing (E2E) as Test Applications
 
 
 # A101_Practium![A101 Cucumber Rapor](https://user-images.githubusercontent.com/98288587/190371843-a43fadcf-2259-49df-85e1-31c247107bb8.png)
+
+![A101-2](https://user-images.githubusercontent.com/98288587/190868201-d1fdb462-e1ee-4476-9398-7d7b0e168fef.png)
