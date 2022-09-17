@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="115.257">
-    <testcase classname="Second Case A101 test otomasyon Practicum" name="Uctan uca test otomasyonu" time="115.122">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="90.453">
+    <testcase classname="Second Case A101 test otomasyon Practicum" name="Uctan uca test otomasyonu" time="90.301">
         <system-out>
             <![CDATA[Given kullanici "a101Url" anasayfasinda.....................................passed
 And kullanici cerezi kabul eder.............................................passed
@@ -16,6 +16,11 @@ When kullanici uye olmadan devam et tiklar..................................pass
 And kullanici e-mail girer ve devam et butonu tiklar........................passed
 When kullanici yeni adres olusturur.........................................passed
 And kullanici adres kaydet tiklar...........................................passed
+And kullanici kaydet ve devam et tiklar.....................................passed
+And kullanici odeme ekrani geldigini kontrol eder...........................passed
+And kullanici siparisi Tamamla tiklar.......................................passed
+And kullanici Lütfen kart seçin veya kart bilgisi girin yazisini gorur......passed
+And kullanici sayfayi kapatir...............................................passed
 ]]>
         </system-out>
     </testcase>

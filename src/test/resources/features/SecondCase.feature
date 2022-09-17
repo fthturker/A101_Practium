@@ -14,7 +14,7 @@ Feature: Second Case A101 test otomasyon Practicum
     And kullanici sepeti onayla butonuna tiklar
     When kullanici uye olmadan devam et tiklar
     And kullanici e-mail girer ve devam et butonu tiklar
-    When kullanici yeni ad res olusturur
+    When kullanici yeni adres olusturur
     And kullanici adres kaydet tiklar
     And kullanici kaydet ve devam et tiklar
     And kullanici odeme ekrani geldigini kontrol eder
