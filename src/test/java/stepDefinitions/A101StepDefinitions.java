@@ -24,7 +24,8 @@ public class A101StepDefinitions {
 
     @Then("kullanici cerezi kabul eder")
     public void kullaniciCereziKabulEder() {
-        a101Page.cerez.click();
+        Driver.waitAndClick(a101Page.cerez, 2);
+
     }
 
     @Then("kullanici A101 anasayfasinda dropdown a tiklar")
@@ -135,27 +136,23 @@ public class A101StepDefinitions {
     // Second Case Step Definitions
 
     @Then("kullanici giyim aksesuar i tiklar")
-    public void kullanici_giyim_aksesuar_i_tiklar() throws InterruptedException {
-        a101Page.giyimAksesuarButonu.click();
-        Thread.sleep(3000);
+    public void kullanici_giyim_aksesuar_i_tiklar() {
+        Driver.waitAndClick(a101Page.giyimAksesuarButonu, 2);
     }
 
     @Then("kullanici kadin ic giyim i tiklar")
-    public void kullanici_kadin_ic_giyim_i_tiklar() throws InterruptedException {
-        a101Page.kadinIcGiyimButonu.click();
-        Thread.sleep(3000);
+    public void kullanici_kadin_ic_giyim_i_tiklar() {
+        Driver.waitAndClick(a101Page.kadinIcGiyimButonu, 2);
     }
 
     @Then("kullanici dizalti corap tiklar")
-    public void kullanici_dizalti_corap_tiklar() throws InterruptedException {
-        a101Page.dizAltiCorapButonu.click();
-        Thread.sleep(3000);
+    public void kullanici_dizalti_corap_tiklar() {
+        Driver.waitAndClick(a101Page.dizAltiCorapButonu, 2);
     }
 
     @And("kullanici ilk urunu secer")
-    public void kullaniciIlkUrunuSecer() throws InterruptedException {
-        a101Page.ilkUrunCorap.click();
-        Thread.sleep(3000);
+    public void kullaniciIlkUrunuSecer() {
+        Driver.waitAndClick(a101Page.ilkUrunCorap, 2);
     }
 
     @Then("kullanici acilan urunun siyah oldugunu dogrular")
@@ -165,31 +162,27 @@ public class A101StepDefinitions {
         Assert.assertTrue(expectedRenk.contains(actualRenk));
     }
 
-
     @And("kullanici sepeti goruntulu leye tiklar")
-    public void kullaniciSepetiGoruntuluLeyeTiklar() throws InterruptedException {
-        a101Page.sepetGoruntuleButonu.click();
-        Thread.sleep(3000);
+    public void kullaniciSepetiGoruntuluLeyeTiklar() {
+        Driver.waitAndClick(a101Page.sepetGoruntuleButonu, 2);
     }
 
     @When("kullanici uye olmadan devam et tiklar")
-    public void kullaniciUyeOlmadanDevamEtTiklar() throws InterruptedException {
-        a101Page.uyeOlmadanDevamEtButon.click();
-        Thread.sleep(3000);
+    public void kullaniciUyeOlmadanDevamEtTiklar() {
+        Driver.waitAndClick(a101Page.uyeOlmadanDevamEtButon, 2);
     }
 
     @And("kullanici e-mail girer ve devam et butonu tiklar")
-    public void kullaniciEMailGirerVeDevamEtButonuTiklar() throws InterruptedException {
+    public void kullaniciEMailGirerVeDevamEtButonuTiklar() {
         a101Page.eMail.sendKeys(faker.internet().emailAddress() + Keys.TAB);
-        Thread.sleep(3000);
-        a101Page.devamEtButon.click();
-        Thread.sleep(3000);
+        Driver.wait(2);
+
+        Driver.waitAndClick(a101Page.devamEtButon, 2);
     }
 
     @When("kullanici yeni adres olusturur")
     public void kullaniciYeniAdresOlusturur() throws InterruptedException {
-        a101Page.yeniAdresOlusturButonu.click();
-        Thread.sleep(3000);
+        Driver.waitAndClick(a101Page.yeniAdresOlusturButonu, 2);
 
         actions.click(a101Page.adresBasligi).
                 sendKeys("Ev adresi").
@@ -200,36 +193,36 @@ public class A101StepDefinitions {
                 sendKeys(Keys.TAB).
                 sendKeys(faker.phoneNumber().cellPhone())
                 .perform();
-        Thread.sleep(3000);
+        Driver.wait(2);
 
-        Select il= new Select(a101Page.ilDropDown);
+        Select il = new Select(a101Page.ilDropDown);
         il.selectByVisibleText("İSTANBUL");
         Thread.sleep(3000);
-        Select ilce= new Select(a101Page.ilceDropDown);
+        Select ilce = new Select(a101Page.ilceDropDown);
         ilce.selectByVisibleText("ÜMRANİYE");
         Thread.sleep(3000);
-        Select mahalle= new Select(a101Page.mahalleDropDown);
+        Select mahalle = new Select(a101Page.mahalleDropDown);
         mahalle.selectByValue("36277");
-        Thread.sleep(3000);
-               actions.click(a101Page.adres).
-                       sendKeys(faker.address().fullAddress()).
+        Driver.wait(2);
+
+        actions.click(a101Page.adres).
+                sendKeys(faker.address().fullAddress()).
                 sendKeys(Keys.TAB).
                 sendKeys("34878").
                 perform();
-        Thread.sleep(3000);
+        Driver.wait(2);
     }
 
     @And("kullanici adres kaydet tiklar")
     public void kullaniciAdresKaydetTiklar() throws InterruptedException {
-        a101Page.adresKaydetButonu.click();
-        Thread.sleep(3000);
+        Driver.waitAndClick(a101Page.adresKaydetButonu, 2);
     }
 
     @And("kullanici kaydet ve devam et tiklar")
     public void kullaniciKaydetVeDevamEtTiklar() throws InterruptedException {
-        a101Page.kaydetVeDevamEtButonu.click();
-        Thread.sleep(3000);
+        Driver.waitAndClick(a101Page.kaydetVeDevamEtButonu, 2);
     }
+
     @And("kullanici odeme ekrani geldigini kontrol eder")
     public void kullaniciOdemeEkraniGeldiginiKontrolEder() {
         Assert.assertTrue(a101Page.odemeSayfasi.isDisplayed());
@@ -237,16 +230,13 @@ public class A101StepDefinitions {
 
     @And("kullanici siparisi Tamamla tiklar")
     public void kullaniciSiparisiTamamlaTiklar() throws InterruptedException {
-        a101Page.siparisiTamamlaButonu.click();
-        Thread.sleep(3000);
+        Driver.waitAndClick(a101Page.siparisiTamamlaButonu, 2);
     }
 
-    @And("kullanici Lütfen kart seçin veya kart bilgisi girin yazisini gorur")
-    public void kullaniciLütfenKartSeçinVeyaKartBilgisiGirinYazisiniGorur() {
-        String actualText1="Lütfen kart seçin veya kart bilgisi girin.";
-        String expectedText1=a101Page.kartBilgisiGirinText.getText();
-        Assert.assertEquals(expectedText1,actualText1);
+    @And("kullanici Lutfen kart secin veya kart bilgisi girin yazisini gorur")
+    public void kullaniciLutfenKartSecinVeyaKartBilgisiGirinYazisiniGorur() {
+        String  expectedText1= "Lütfen kart seçin veya kart bilgisi girin.";
+        String  actualText1= a101Page.kartBilgisiGirinText.getText();
+        Assert.assertEquals(expectedText1, actualText1);
     }
-
-
 }

@@ -19,5 +19,5 @@ Feature: Second Case A101 test otomasyon Practicum
     And kullanici kaydet ve devam et tiklar
     And kullanici odeme ekrani geldigini kontrol eder
     And kullanici siparisi Tamamla tiklar
-    And kullanici Lütfen kart seçin veya kart bilgisi girin yazisini gorur
+    And kullanici Lutfen kart secin veya kart bilgisi girin yazisini gorur
     And kullanici sayfayi kapatir
